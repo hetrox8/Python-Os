@@ -28,3 +28,22 @@ print(output)
 
 #import re
 print(re.search(r"p.ng", "Pangaea", re.IGNORECASE))
+
+
+#import re
+print(re.search(r"cat|dog", "i like cats"))
+
+#import re
+print(re.search(r"cat|dog", "i like cats and dogs"))
+#it will print the first result
+
+#import re
+print(re.findall(r"cat|dog", "i like both cats and dogs"))
+#this prints both
+
+
+#import re
+print(re.search(r"Py.*n", "Pygmalion"))
+print(re.search(r"Py.*n", "Python Programming"))
+print(re.search(r"Py[a-z]*n", "Python Programming"))
+print(re.search(r"Py[a-z]*n", "Pyn"))
